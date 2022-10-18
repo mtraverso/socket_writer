@@ -1,6 +1,11 @@
 import os
 import socket
 import json
+import sys
+
+file = sys.argv[1]
+if file is None:
+    file = '../json_data.json'
 
 print("Connecting...")
 if os.path.exists("/Users/matias/gsaidata/socket/gs_socket"):
@@ -9,7 +14,7 @@ if os.path.exists("/Users/matias/gsaidata/socket/gs_socket"):
     print("Ready.")
     print("Ctrl-C to quit.")
     print("Sending 'DONE' shuts down the server and quits.")
-    f = open("../json_data.json")
+    f = open(file)
     json_data = json.load(f)
     print(json_data)
 
