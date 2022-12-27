@@ -3,9 +3,10 @@ import socket
 import json
 import sys
 
-file = sys.argv[1]
-if file is None:
+if len(sys.argv) == 1:
     file = '../json_data.json'
+else:
+    file = sys.argv[1]
 
 print("Connecting...")
 if os.path.exists("/Users/matias/gsaidata/socket/gs_socket"):
