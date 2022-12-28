@@ -90,7 +90,6 @@
                 "type": "Foreign material",
                 "classification": "Bone",
                 "is_ai": false,
-		"is_defect":true,
                 "image_ref": [
                     {
                         "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
