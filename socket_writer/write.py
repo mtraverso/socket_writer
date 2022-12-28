@@ -3,14 +3,15 @@ import socket
 import json
 import sys
 
-file = sys.argv[1]
-if file is None:
+if len(sys.argv) == 1:
     file = '../json_data.json'
+else:
+    file = sys.argv[1]
 
 print("Connecting...")
-if os.path.exists("/Users/matias/gsaidata/socket/gs_socket"):
+if os.path.exists("/datagsai/socket/gs_socket"):
     client = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
-    client.connect("/Users/matias/gsaidata/socket/gs_socket")
+    client.connect("/datagsai/socket/gs_socket")
     print("Ready.")
     print("Ctrl-C to quit.")
     print("Sending 'DONE' shuts down the server and quits.")

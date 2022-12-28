@@ -1,5 +1,5 @@
 {
-    "event_id": "0ac8279e-a7f3-4b0f-8e84-0010cff1d433",
+    "event_id": "0ac8279e-a7f3-4b0f-8e84-0010cff1d436",
     "event_timestamp": "2021-06-19T21:30:30.000Z",
     "event_type": "inspectionDetails",
     "machine_id": "machine12345679",
@@ -10,26 +10,26 @@
             {
                 "index": 1,
                 "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
-                "acq_timestamp": "2021-06-19T21:30:30.000Z",
-                "file_image_url": "/home/ubuntu/images/he16_dc2tee_s6322_0000000055.png",
+                "acq_timestamp": "2021-06-19T21: 30: 30.000Z",
+                "file_image_url": "/Users/matias/datagsai/images/test_image_1.jpg",
                 "resolution": {
                     "width": 1280,
                     "length": 720
                 },
-                "file_format": "png",
+                "file_format": "jpg",
                 "image_file_size": 428356,
                 "detector": "gsai-xray-v1.2"
             },
             {
                 "index": 2,
                 "image_id": "image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325",
-                "acq_timestamp": "2021-06-19T21:30:30.000Z",
-                "file_image_url": "/home/ubuntu/images/he16_dc2tee_s6322_0000000055.png",
+                "acq_timestamp": "2021-06-19T21: 30: 30.000Z",
+                "file_image_url": "/Users/matias/datagsai/images/test_image_2.jpg",
                 "resolution": {
                     "width": 1280,
                     "length": 720
                 },
-                "file_format": "png",
+                "file_format": "jpg",
                 "image_file_size": 456123,
                 "detector": "gsai-xray-v1.2"
             }
@@ -40,16 +40,16 @@
     "product_grade_threshold": 0.75,
     "product_grade": "C",
     "inspection_type": "Production",
-    "inspection_results": {
+    "defects": {
+        "is_defect": true,
         "defect_count": 4,
         "primary_defect_ref": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
-        "result_details": [
+        "defect_details": [
             {
                 "defect_id": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
                 "type": "Foreign material",
-                "classification": "Metal",
-		"is_ai":false,
-		"is_defect":true,
+                "classification": "Glass",
+                "is_ai": false,
                 "image_ref": [
                     {
                         "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
@@ -90,7 +90,6 @@
                 "type": "Foreign material",
                 "classification": "Bone",
                 "is_ai": false,
-		"is_defect":true,
                 "image_ref": [
                     {
                         "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
@@ -127,9 +126,7 @@
                 "position": "Package Region"
             },
             {
-                "result_id": "d467081b-05c4-4b74-907b-701e3a8e6501",
-                "is_defect": true,
-		"is_ai":false,
+                "defect_id": "d467081b-05c4-4b74-907b-701e3a8e6501",
                 "type": "Foreign material",
                 "classification": "Not available",
                 "is_ai": false,
@@ -193,8 +190,7 @@
                 "defect_id": "3c85689c-185a-459e-9b8e-ce0dc66a4b3d",
                 "type": "Material handling",
                 "classification": "Bone",
-		"is_ai":true,
-		"is_defect":true,
+                "is_ai": false,
                 "image_ref": [
                     {
                         "image_id": "image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325"
@@ -215,7 +211,6 @@
                 "defect_id": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
                 "type": "Foreign material",
                 "classification": "Bone",
-		"is_defect":true,
                 "image_ref": [
                     {
                         "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
@@ -256,8 +251,6 @@
                 "defect_id": "0ecc452f-2206-413b-a1ed-531bc225fe35",
                 "type": "Checkweighing",
                 "classification": "Overweight",
-		"is_ai":false,
-		"is_defect":true,
                 "image_ref": [
                     {
                         "image_id": "image12345679"

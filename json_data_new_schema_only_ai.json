@@ -1,0 +1,183 @@
+{
+    "event_id": "0ac8279e-a7f3-4b0f-8e84-0010cff1d438",
+    "event_timestamp": "2021-06-19T21:30:30.000Z",
+    "event_type": "inspectionDetails",
+    "machine_id": "machine12345679",
+    "job_id": "dbb7d6fd-d76b-40e5-a515-62271a3c8f40",
+    "images": {
+        "number": 1,
+        "image_list": [
+            {
+                "index": 1,
+                "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
+                "acq_timestamp": "2021-06-19T21:30:30.000Z",
+                "file_image_url": "/home/ubuntu/images/he16_dc2tee_s6322_0000000055.png",
+                "resolution": {
+                    "width": 1280,
+                    "length": 720
+                },
+                "file_format": "png",
+                "image_file_size": 428356,
+                "detector": "gsai-xray-v1.2"
+            },
+            {
+                "index": 2,
+                "image_id": "image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325",
+                "acq_timestamp": "2021-06-19T21:30:30.000Z",
+                "file_image_url": "/home/ubuntu/images/he16_dc2tee_s6322_0000000055.png",
+                "resolution": {
+                    "width": 1280,
+                    "length": 720
+                },
+                "file_format": "png",
+                "image_file_size": 456123,
+                "detector": "gsai-xray-v1.2"
+            }
+        ]
+    },
+    "status": "Rejected",
+    "product_grade_score": 0.8,
+    "product_grade_threshold": 0.75,
+    "product_grade": "C",
+    "inspection_type": "Production",
+    "inspection_results": {
+        "result_count": 6,
+        "defect_count": 5,
+        "primary_defect_ref": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
+        "result_details": [
+            {
+                "result_id": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
+                "is_defect": true,
+                "type": "Foreign material",
+                "classification": "Bone",
+		"is_ai":true,
+                "image_ref": [
+                    {
+                        "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
+                        "polygon": [
+                            [0.53, 0.87],
+                            [0.78, 0.46],
+                            [0.31, 0.43],
+                            [0.50, 0.12]
+                        ]
+                    }
+                ],
+                "source": {
+                    "model": "wc_v12",
+                    "version": "20220916.4-main-157da009",
+                    "type": "detection"
+                },
+                "size": {
+                    "area": 2.458,
+                    "width": 5,
+                    "length": 4
+                },
+                "position": "Package Region"
+            }
+        ]
+    },
+    "foreign_material_details": {
+        "is_defect": true,
+        "number": 3,
+        "details": [
+            {
+                "index": 1,
+                "position": "Package Region",
+                "type": "Bone",
+                "area": 2.458,
+                "bbox_width": 0.015,
+                "bbox_height": 0.02,
+                "x": 0.456,
+                "y": 0.78,
+                "width": 5,
+                "length": 4
+            },
+            {
+                "index": 2,
+                "position": "Package Region",
+                "type": "Glass",
+                "area": 1.123,
+                "bbox_width": 0.02,
+                "bbox_height": 0.003,
+                "x": 0.356,
+                "y": 0.70,
+                "width": 7,
+                "length": 9
+            },
+            {
+                "index": 3,
+                "position": "Package Region",
+                "type": "Metal",
+                "area": 0.321,
+                "bbox_width": 0.01,
+                "bbox_height": 0.025,
+                "x": 0.426,
+                "y": 0.79,
+                "width": 4,
+                "length": 3
+            }
+        ]
+    },
+    "measurement_groups": [
+        {
+            "type": "Checkweighing",
+            "measurements": [
+                {
+                    "name": "component",
+                    "value_string": "Cheese",
+                    "unit": "none" 
+                },
+                {
+                    "name": "area",
+                    "value_number": 12,
+                    "unit": "sq mm" 
+                },
+                {
+                    "name": "weight",
+                    "value_number": 133.3,
+                    "unit": "g" 
+                }
+            ]
+        },
+        {
+            "type": "Checkweighing",
+            "measurements": [
+                {
+                    "name": "component",
+                    "value_string": "Nuts",
+                    "unit": "none" 
+                },
+                {
+                    "name": "area",
+                    "value_number": 4,
+                    "unit": "sq mm" 
+                },
+                {
+                    "name": "weight",
+                    "value_number": 25.6,
+                    "unit": "g" 
+                }
+            ]
+        },
+        {
+            "type": "Checkweighing",
+            "measurements": [
+                {
+                    "name": "component",
+                    "value_string": "total",
+                    "unit": "none" 
+                },
+                {
+                    "name": "area",
+                    "value_number": 544.4,
+                    "unit": "sq mm" 
+                },
+                {
+                    "name": "weight",
+                    "value_number": 233.4,
+                    "unit": "g" 
+                }
+            ]
+        }
+    ]
+}
