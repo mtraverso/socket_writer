@@ -2,6 +2,9 @@ import json
 import os
 import socket
 import time
+import uuid
+from datetime import datetime
+from uuid import UUID
 
 gs_socket = "/Users/matias/gsaidata/socket/gs_socket"
 
@@ -16,6 +19,8 @@ while i in range(100):
 
         f = open(file)
         json_data = json.load(f)
+        json_data['event_timestamp'] = datetime.now()
+        json_data['event_id'] = str(uuid.uuid4())
 
         client.send(json.dumps(json_data).encode())
         time.sleep(1)
