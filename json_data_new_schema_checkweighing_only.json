@@ -40,14 +40,16 @@
     "product_grade_threshold": 0.75,
     "product_grade": "C",
     "inspection_type": "Production",
-    "defects": {
-        "is_defect": true,
-        "defect_count": 1,
+    "inspection_results": {
+        "result_count": 6,
+        "defect_count": 5,
         "primary_defect_ref": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
-        "defect_details": [
+        "result_details": [
             {
                 "defect_id": "0ecc452f-2206-413b-a1ed-531bc225fe35",
                 "type": "Checkweighing",
+                "is_defect": true,
+                "is_ai":false,
                 "classification": "Overweight",
                 "image_ref": [
                     {
