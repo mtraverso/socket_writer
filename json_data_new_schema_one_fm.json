@@ -11,7 +11,7 @@
                 "index": 1,
                 "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
                 "acq_timestamp": "2021-06-19T21:30:30.000Z",
-                "file_image_url": "/home/ubuntu/images/he16_dc2tee_s6322_0000000055.png",
+                "file_image_url": "/Users/matias/gsaidata/images/test_image_1.jpg",
                 "resolution": {
                     "width": 1280,
                     "length": 720
@@ -24,7 +24,7 @@
                 "index": 2,
                 "image_id": "image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325",
                 "acq_timestamp": "2021-06-19T21:30:30.000Z",
-                "file_image_url": "/home/ubuntu/images/he16_dc2tee_s6322_0000000055.png",
+                "file_image_url": "/Users/matias/gsaidata/images/test_image_2.jpg",
                 "resolution": {
                     "width": 1280,
                     "length": 720
@@ -50,7 +50,7 @@
                 "is_defect": true,
                 "type": "Foreign material",
                 "classification": "Glass",
-		"is_ai":false,
+		        "is_ai":false,
                 "image_ref": [
                     {
                         "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
