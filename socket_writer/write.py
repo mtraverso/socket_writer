@@ -5,6 +5,7 @@ import json
 import sys
 import uuid
 from uuid import UUID
+from datetime import datetime
 
 if len(sys.argv) == 1:
     file = '../json_data.json'
@@ -25,8 +26,8 @@ if os.path.exists(gs_socket):
     json_data['event_timestamp'] = datetime.now(tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S.%f')
     json_data['acq_time'] = int(datetime.now(tz=timezone.utc).timestamp() * 1000)
     print(json_data)
-
-    client.sendall(json.dumps(json_data).encode())
+    json_data['acq_time'] = int(datetime.now().timestamp()*1000)
+    client.send(json.dumps(json_data).encode())
     client.close()
 else:
     print("Couldn't Connect!")
