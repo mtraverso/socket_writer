@@ -24,4 +24,4 @@ def set_image(json_data, images):
     for image_element in json_data.get('images', {}).get('image_list', []):
         if image_element.get('detector') == target_detector:
             # Modify the element as needed
-            image_element['file_image_url'] = '/Users/matias/gsaidata/images/'+random_image
+            image_element['file_image_url'] = '/datagsai/images/'+random_image
