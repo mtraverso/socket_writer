@@ -24,9 +24,9 @@ if os.path.exists(gs_socket):
     json_data = json.load(f)
     json_data['event_id'] = str(uuid.uuid4())
     json_data['event_timestamp'] = datetime.now(tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S.%f')
-    json_data['acq_time'] = int(datetime.now(tz=timezone.utc).timestamp() * 1000)
+    json_data['acq_time'] = datetime.now(tz=timezone.utc).timestamp()
+    json_data['images']['image_list'][0]['acq_timestamp'] = datetime.now(tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S.%f')
     print(json_data)
-    json_data['acq_time'] = int(datetime.now().timestamp()*1000)
     client.send(json.dumps(json_data).encode())
     client.close()
 else:

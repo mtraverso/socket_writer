@@ -3,10 +3,13 @@ import os
 import socket
 import time
 
-gs_socket_1 = "/Users/matias/gsaidata/socket/gs_socket_1"
-gs_socket_2 = "/Users/matias/gsaidata/socket/gs_socket_2"
+gs_socket_1 = "/datagsai/socket/gs_socket_1"
+gs_socket_2 = "/datagsai/socket/gs_socket_2"
 
 files = ['../' + x for x in os.listdir('..') if x.endswith('.json')]
+
+images = ['/datagsai/images/' + x for x in os.listdir('/datagsai/images/')]
+
 
 import uuid
 from datetime import datetime, timezone
@@ -38,10 +41,13 @@ while i in range(100):
     json_data['event_timestamp'] = datetime.now(tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S.%f')
     json_data['event_id'] = str(uuid.uuid4())
     json_data['acq_time'] = int(datetime.now(tz=timezone.utc).timestamp() * 1000)
+    json_data['images']['image_list'][0]['file_image_url'] = random.choice(images)
     print(json_data['event_id'])
     if i%2 == 0:
+        json_data['belt_part'] = 'L'
         client_1.send(json.dumps(json_data).encode())
     else:
+        json_data['belt_part'] = 'R'
         client_2.send(json.dumps(json_data).encode())
 
     time.sleep(max(1, int(random() * 10)))
