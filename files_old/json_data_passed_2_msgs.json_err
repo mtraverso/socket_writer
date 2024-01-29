@@ -1,0 +1,88 @@
+{
+    "acq_time": "1657648745496",
+    "camera_id": "gsai_cam_xray_1",
+    "event_id": "880ef49b-5f34-4424-aee8-85c7747aa5dc",
+    "event_timestamp": "2023-01-12T13:18:12.997Z",
+    "event_type": "inspectionDetails",
+    "image_id": "image_1_0_880ef49b-5f34-4424-aee8-85c7747aa5dc",
+    "images": {
+        "image_list": [
+            {
+                "acq_timestamp": "2022-07-12T17:59:05.496Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/Users/matias/gsaidata/images/image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325",
+                "image_file_size": 41738,
+                "image_id": "image_1_0_880ef49b-5f34-4424-aee8-85c7747aa5dc",
+                "index": 1,
+                "resolution": {
+                    "height": 272,
+                    "width": 208
+                }
+            }
+        ],
+        "number": 1
+    },
+    "inspection_results": {
+        "defect_count": 0,
+        "primary_defect_ref": "",
+        "result_count": 0,
+        "result_details": null
+    },
+    "inspection_type": "Production",
+    "machine_id": "Earth002",
+    "measurement_groups": [
+        {
+            "measurements": [
+                {
+                    "name": "component",
+                    "unit": "none",
+                    "value_string": "Cheese"
+                },
+                {
+                    "name": "weight",
+                    "unit": "gr",
+                    "value_number": 220.7537841796875
+                },
+                {
+                    "name": "area",
+                    "unit": "sq cm",
+                    "value_number": 2.5594136714935303
+                }
+            ],
+            "type": "Checkweighing"
+        }
+    ],
+    "status": "Passed"
+}{
+    "acq_time": "1657648745496",
+    "camera_id": "gsai_cam_xray_1",
+    "event_id": "880ef49b-5f34-4424-aee8-85c7747aa5dc",
+    "event_timestamp": "2023-01-12T13:18:12.997Z",
+    "event_type": "inspectionDetails",
+    "image_id": "image_1_0_880ef49b-5f34-4424-aee8-85c7747aa5dc",
+    "images": {
+        "image_list": [
+            {
+                "acq_timestamp": "2022-07-12T17:59:05.496Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/Users/matias/gsaidata/images/image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325",
+                "image_file_size": 41738,
+                "image_id": "image_1_0_880ef49b-5f34-4424-aee8-85c7747aa5dc",
+                "index": 1,
+                "resolution": {
+                    "height": 272,
+                    "width": 208
+                }
+            }
+        ],
+        "number": 1
+    },
+    "inspection_results": {
+        "defect_count": 0,
+        "primary_defect_ref": "",
+        "result_count": 0,
+        "result_details": null
+    },
+    "inspection_type": "Production",

@@ -1,0 +1,71 @@
+{
+	"acq_time" : "1695760939475",
+	"belt_part" : "F",
+	"camera_id" : "gsai_cam_xray_1",
+	"event_id" : "81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+	"event_timestamp" : "2023-09-26T20:42:19.475Z",
+	"event_type" : "inspectionDetails",
+	"images" :
+	{
+		"image_list" :
+		[
+			{
+				"acq_timestamp" : "2023-09-26T20:42:19.475Z",
+				"detector" : "gsai-xray-v1.2",
+				"file_format" : "png",
+				"file_image_url" : "/datagsai/images/test_image_1",
+				"image_file_size" : 266734,
+				"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+				"index" : 1,
+				"resolution" :
+				{
+					"length" : 544,
+					"width" : 285
+				}
+			},
+			{
+				"acq_timestamp" : "",
+				"detector" : "metal-detector",
+				"file_image_url" : "",
+				"image_id" : "md_706549aa-1bd4-40b2-960f-4b9981e215d8",
+				"index" : 2
+			}
+		],
+		"number" : 2
+	},
+	"inspection_results" :
+	{
+		"defect_count" : 1,
+		"primary_defect_ref" : "0835e3f7-9a9c-4e90-9073-d04198a5a86c",
+		"result_count" : 1,
+		"result_details" :
+		[
+			{
+				"classification" : "Metal",
+				"image_ref" :
+				[
+					{
+						"image_id" : "md_706549aa-1bd4-40b2-960f-4b9981e215d8"
+					}
+				],
+				"is_defect" : true,
+				"result_id" : "0835e3f7-9a9c-4e90-9073-d04198a5a86c",
+				"source" :
+				{
+					"model" : "result_handler_md",
+					"type" : "detection",
+					"version" : "3.0"
+				},
+				"type" : "Foreign material"
+			}
+		]
+	},
+	"inspection_type" : "Production",
+	"job_id" : "26285103-2a0e-4603-974c-70df90aa21f9",
+	"machine_id" : "Carrera012",
+	"measurement_groups" : null,
+	"reject_bin" : "bin2",
+	"reject_bin_reason" : "metal_detector",
+	"status" : "Rejected"
+}
+

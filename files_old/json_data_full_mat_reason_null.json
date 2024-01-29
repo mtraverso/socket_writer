@@ -1,0 +1,468 @@
+{
+    "acq_time": "1666666666000",
+    "belt_part": "F",
+    "camera_id": "gsai_cam_xray_1",
+    "event_id": "d3d34994-cc98-488e-8ce3-0c8065011ec9",
+    "event_timestamp": "2023-09-12T18:56:38.914Z",
+    "event_type": "inspectionDetails",
+    "images": {
+        "image_list": [
+            {
+                "acq_timestamp": "2022-10-25T02:57:46.000Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/datagsai/images/image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c26",
+                "image_file_size": 192463,
+                "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9",
+                "index": 1,
+                "resolution": {
+                    "length": 373,
+                    "width": 370
+                }
+            },
+            {
+                "acq_timestamp": "2022-10-25T02:57:46.000Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/datagsai/images/image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325",
+                "image_file_size": 192463,
+                "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec8",
+                "index": 2,
+                "resolution": {
+                    "length": 373,
+                    "width": 370
+                }
+            }
+        ],
+        "number": 2
+    },
+    "inspection_results": {
+        "defect_count": 12,
+        "primary_defect_ref": "49a109eb-b180-4c72-934e-f714531d02cc",
+        "result_count": 12,
+        "result_details": [
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9",
+                        "polygon": [
+                            [
+                                0.04321404546499252,
+                                0.18242789804935455
+                            ],
+                            [
+                                0.4145847260951996,
+                                0.18242789804935455
+                            ],
+                            [
+                                0.4145847260951996,
+                                0.5117371082305908
+                            ],
+                            [
+                                0.04321404546499252,
+                                0.5117371082305908
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "585dd827-13fd-4a05-9c89-b0a720ff11a5",
+                "size": {
+                    "area": 37.30859375,
+                    "length": 6.83098591549296,
+                    "width": 6.443661971830991
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9",
+                        "polygon": [
+                            [
+                                0.5847400426864624,
+                                0.1374916136264801
+                            ],
+                            [
+                                0.9567859768867493,
+                                0.1374916136264801
+                            ],
+                            [
+                                0.9567859768867493,
+                                0.43661972880363464
+                            ],
+                            [
+                                0.5847400426864624,
+                                0.43661972880363464
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "18dd97b2-9fc2-467a-af27-7c3815427f20",
+                "size": {
+                    "area": 6222.3515625,
+                    "length": 97.00704225352113,
+                    "width": 78.52112676056339
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9",
+                        "polygon": [
+                            [
+                                0.5800135135650635,
+                                0.5244802236557007
+                            ],
+                            [
+                                0.9500337839126587,
+                                0.5244802236557007
+                            ],
+                            [
+                                0.9500337839126587,
+                                0.8262910842895508
+                            ],
+                            [
+                                0.5800135135650635,
+                                0.8262910842895508
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "4099bf84-ef19-46db-b6a4-78af95cd2a09",
+                "size": {
+                    "area": 6157.78759765625,
+                    "length": 96.47887323943662,
+                    "width": 79.22535211267606
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9",
+                        "polygon": [
+                            [
+                                0.045914921909570694,
+                                0.5922200083732605
+                            ],
+                            [
+                                0.4152599573135376,
+                                0.5922200083732605
+                            ],
+                            [
+                                0.4152599573135376,
+                                0.8933601379394531
+                            ],
+                            [
+                                0.045914921909570694,
+                                0.8933601379394531
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "418fc50e-f2a3-4f34-837b-2e484b954bff",
+                "size": {
+                    "area": 6129.89111328125,
+                    "length": 96.30281690140846,
+                    "width": 79.04929577464789
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9",
+                        "polygon": [
+                            [
+                                0.056718435138463974,
+                                0
+                            ],
+                            [
+                                0.4186360538005829,
+                                0
+                            ],
+                            [
+                                0.4186360538005829,
+                                0.12407779693603516
+                            ],
+                            [
+                                0.056718435138463974,
+                                0.12407779693603516
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "e0464c15-235c-4eb3-a07e-b8e07b5d77ee",
+                "size": {
+                    "area": 738.2122802734375,
+                    "length": 94.36619718309859,
+                    "width": 32.57042253521127
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9",
+                        "polygon": [
+                            [
+                                0.567184329032898,
+                                0
+                            ],
+                            [
+                                0.9115462303161621,
+                                0
+                            ],
+                            [
+                                0.9115462303161621,
+                                0.09792085736989975
+                            ],
+                            [
+                                0.567184329032898,
+                                0.09792085736989975
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "01a0d49f-2b52-4b6f-ba54-211ca9aa85eb",
+                "size": {
+                    "area": 617.111572265625,
+                    "length": 89.7887323943662,
+                    "width": 25.704225352112676
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Underweight",
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9"
+                    }
+                ],
+                "is_defect": true,
+                "result_id": "9a7a477a-9576-4157-943e-d7143dacd400",
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Checkweighing"
+            },
+            {
+                "classification": "Metal",
+                "confidence_score": 0.9967100620269775,
+                "image_ref": [
+                    {
+                        "image_id": "image_6_0_3e5df42f-d298-41d5-b78d-4240331b0dcb",
+                        "polygon": [
+                            [
+                                0.40462833642959595,
+                                0.41744378209114075
+                            ],
+                            [
+                                0.41093969345092773,
+                                0.41744378209114075
+                            ],
+                            [
+                                0.41093969345092773,
+                                0.4218321442604065
+                            ],
+                            [
+                                0.40462833642959595,
+                                0.4218321442604065
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "49a109eb-b180-4c72-934e-f714531d02cc",
+                "size": {
+                    "area": 2.2316999435424805,
+                    "length": 1.5845070422535212,
+                    "width": 1.4084507042253522
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "classification",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Glass",
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9",
+                        "polygon": [
+                            [
+                                0.5847400426864624,
+                                0.1374916136264801
+                            ],
+                            [
+                                0.9567859768867493,
+                                0.1374916136264801
+                            ],
+                            [
+                                0.9567859768867493,
+                                0.43661972880363464
+                            ],
+                            [
+                                0.5847400426864624,
+                                0.43661972880363464
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "18dd97b2-9fc2-467a-af27-7c3815427f20",
+                "size": {
+                    "area": 22.3515625,
+                    "length": 7.007042253521135,
+                    "width": 8.52112676056339
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "torn-cheese",
+                "confidence_score": 1,
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9"
+                    }
+                ],
+                "is_defect": true,
+                "result_grade": "F",
+                "result_grade_description": "Torn cheese",
+                "result_grade_score": 0.004235428757965565,
+                "result_grade_threshold": 0.9997,
+                "result_id": "96e3565f-6431-400a-89e4-a42f0b143c08",
+                "source": {
+                    "model": "inference",
+                    "type": "classification",
+                    "version": "1.0"
+                },
+                "type": "Material handling"
+            },
+            {
+                "classification": "product-in-seal",
+                "confidence_score": 1,
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9"
+                    }
+                ],
+                "is_defect": true,
+                "result_grade": "F",
+                "result_grade_description": "Product in a seal",
+                "result_grade_score": 0.4494529366493225,
+                "result_grade_threshold": 0.98,
+                "result_id": "55597934-28cc-409f-b384-81d486a03655",
+                "source": {
+                    "model": "inference",
+                    "type": "classification",
+                    "version": "1.0"
+                },
+                "type": "Material handling"
+            },
+            {
+                "classification": "Metal",
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9"
+                    }
+                ],
+                "is_defect": true,
+                "result_id": "abcdef01-2345-6789-ffff-ffffffffffff",
+                "source": {
+                    "model": "result_handler_md",
+                    "type": "detection",
+                    "version": "3.0"
+                },
+                "type": "Foreign material"
+            }
+        ]
+    },
+    "inspection_type": "GSAI Card",
+    "job_id": "4c9b4a12-3401-41fe-8e88-21bf784e76db",
+    "machine_id": "Earth002-2",
+    "measurement_groups": [
+        {
+            "measurements": [
+                {
+                    "name": "component",
+                    "unit": "none",
+                    "value_string": "Cheese"
+                },
+                {
+                    "name": "weight",
+                    "unit": "kg",
+                    "value_number": 2.118217706680298
+                },
+                {
+                    "name": "area",
+                    "unit": "sq cm",
+                    "value_number": 7.429583549499512
+                }
+            ],
+            "type": "Checkweighing"
+        }
+    ],
+    "reject_bin": "bin1",
+    "status": "Rejected"
+}

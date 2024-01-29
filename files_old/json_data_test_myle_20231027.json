@@ -1,0 +1,78 @@
+{
+    "acq_time": "1698430423623",
+    "belt_part": "F",
+    "camera_id": "gsai_cam_xray_1",
+    "event_id": "3bc25533-58d9-466f-8d14-dd6217a8244a",
+    "event_timestamp": "2023-10-27T18:13:43.623Z",
+    "event_type": "inspectionDetails",
+    "images": {
+        "image_list": [
+            {
+                "acq_timestamp": "2023-10-27T18:13:43.623Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/datagsai/images/test_image_1.jpg",
+                "image_file_size": 41956,
+                "image_id": "image_184_0_3bc25533-58d9-466f-8d14-dd6217a8244a",
+                "index": 1,
+                "resolution": {
+                    "length": 285,
+                    "width": 208
+                }
+            }
+        ],
+        "number": 1
+    },
+    "inspection_results": {
+        "defect_count": 1,
+        "primary_defect_ref": "1916d434-b270-4748-b824-6fa79e5717d9",
+        "result_count": 1,
+        "result_details": [
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_184_0_3bc25533-58d9-466f-8d14-dd6217a8244a"
+                    }
+                ],
+                "is_ai": false,
+                "is_defect": true,
+                "result_id": "1916d434-b270-4748-b824-6fa79e5717d9",
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign Material"
+            }
+        ]
+    },
+    "inspection_type": "Production",
+    "job_id": "15414991-fd56-4477-992c-646fa6fd6fd4",
+    "machine_id": "Earth003-4",
+    "measurement_groups": [
+        {
+            "measurements": [
+                {
+                    "name": "component",
+                    "unit": "none",
+                    "value_string": "Cheese"
+                },
+                {
+                    "name": "weight",
+                    "unit": "gr",
+                    "value_number": 241.92704772949219
+                },
+                {
+                    "name": "area",
+                    "unit": "sq cm",
+                    "value_number": 3.0939886569976807
+                }
+            ],
+            "type": "Checkweighing"
+        }
+    ],
+    "status": "Rejected",
+    "reject_bin": "bin1",
+    "reject_bin_reason": "cv_other"
+}

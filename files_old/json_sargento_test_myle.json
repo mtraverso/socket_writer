@@ -1,0 +1,79 @@
+{
+  "acq_time": "1686611218427",
+  "job_id": "dbb7d6fd-d76b-40e5-a515-62271a3c8f40",
+  "belt_part": "F",
+  "camera_id": "gsai_cam_xray_1",
+  "event_id": "61e6b260-4f87-4488-80bc-4085c4f303a2",
+  "event_timestamp": "2023-06-12T23:06:58.427Z",
+  "event_type": "inspectionDetails",
+  "images": {
+    "image_list": [
+      {
+        "acq_timestamp": "2023-06-12T23:06:58.427Z",
+        "detector": "gsai-xray-v1.2",
+        "file_format": "png",
+        "file_image_url": "/Users/matias/gsaidata/images/image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325",
+        "image_file_size": 108761,
+        "image_id": "image_3_0_61e6b260-4f87-4488-80bc-4085c4f303a2",
+        "index": 1,
+        "resolution": {
+          "length": 292,
+          "width": 211
+        }
+      }
+    ],
+    "number": 1
+  },
+  "inspection_results": {
+    "defect_count": 1,
+    "primary_defect_ref": "a66d1830-0858-4e3b-a34b-bdbc7aa2ad08",
+    "result_count": 1,
+    "result_details": [
+      {
+        "classification": "Not available",
+        "image_ref": [
+          {
+            "image_id": "image_3_0_61e6b260-4f87-4488-80bc-4085c4f303a2",
+            "polygon": [
+              [
+                0.40000000596046448,
+                0.5283018946647644
+              ],
+              [
+                0.43550294637680054,
+                0.5283018946647644
+              ],
+              [
+                0.43550294637680054,
+                0.55145800113677979
+              ],
+              [
+                0.40000000596046448,
+                0.55145800113677979
+              ]
+            ]
+          }
+        ],
+        "is_ai": false,
+        "is_defect": true,
+        "position": "Package Region",
+        "result_id": "a66d1830-0858-4e3b-a34b-bdbc7aa2ad08",
+        "size": {
+          "area": 22.409988403320312,
+          "length": 5.2816901408450709,
+          "width": 4.7535211267605639
+        },
+        "source": {
+          "model": "cv",
+          "type": "detection",
+          "version": ""
+        },
+        "type": "Foreign material"
+      }
+    ]
+  },
+  "inspection_type": "Production",
+  "machine_id": "VM",
+  "measurement_groups": null,
+  "status": "Rejected"
+}

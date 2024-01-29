@@ -1,0 +1,116 @@
+{
+    "acq_time": "1666666666000",
+    "belt_part": "F",
+    "camera_id": "gsai_cam_xray_1",
+    "event_id": "d3d34994-cc98-488e-8ce3-0c8065011ec9",
+    "event_timestamp": "2023-09-12T18:56:38.914Z",
+    "event_type": "inspectionDetails",
+    "images": {
+        "image_list": [
+            {
+                "acq_timestamp": "2022-10-25T02:57:46.000Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/datagsai/images/image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c26",
+                "image_file_size": 192463,
+                "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9",
+                "index": 1,
+                "resolution": {
+                    "length": 373,
+                    "width": 370
+                }
+            },
+            {
+                "acq_timestamp": "2022-10-25T02:57:46.000Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/datagsai/images/image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325",
+                "image_file_size": 192463,
+                "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec8",
+                "index": 2,
+                "resolution": {
+                    "length": 373,
+                    "width": 370
+                }
+            }
+        ],
+        "number": 2
+    },
+    "inspection_results": {
+        "defect_count": 12,
+        "primary_defect_ref": "96e3565f-6431-400a-89e4-a42f0b143c08",
+        "result_count": 12,
+        "result_details": [
+            {
+                "classification": "torn-cheese",
+                "confidence_score": 1,
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9"
+                    }
+                ],
+                "is_defect": true,
+                "result_grade": "F",
+                "result_grade_description": "Torn cheese",
+                "result_grade_score": 0.004235428757965565,
+                "result_grade_threshold": 0.9997,
+                "result_id": "96e3565f-6431-400a-89e4-a42f0b143c08",
+                "source": {
+                    "model": "inference",
+                    "type": "classification",
+                    "version": "1.0"
+                },
+                "type": "Material handling"
+            },
+            {
+                "classification": "product-in-seal",
+                "confidence_score": 1,
+                "image_ref": [
+                    {
+                        "image_id": "image_341_0_d3d34994-cc98-488e-8ce3-0c8065011ec9"
+                    }
+                ],
+                "is_defect": true,
+                "result_grade": "F",
+                "result_grade_description": "Product in a seal",
+                "result_grade_score": 0.4494529366493225,
+                "result_grade_threshold": 0.98,
+                "result_id": "55597934-28cc-409f-b384-81d486a03655",
+                "source": {
+                    "model": "inference",
+                    "type": "classification",
+                    "version": "1.0"
+                },
+                "type": "Material handling"
+            }
+        ]
+    },
+    "inspection_type": "GSAI Card",
+    "job_id": "4c9b4a12-3401-41fe-8e88-21bf784e76db",
+    "machine_id": "Earth002-2",
+    "measurement_groups": [
+        {
+            "measurements": [
+                {
+                    "name": "component",
+                    "unit": "none",
+                    "value_string": "Cheese"
+                },
+                {
+                    "name": "weight",
+                    "unit": "kg",
+                    "value_number": 2.118217706680298
+                },
+                {
+                    "name": "area",
+                    "unit": "sq cm",
+                    "value_number": 7.429583549499512
+                }
+            ],
+            "type": "Checkweighing"
+        }
+    ],
+    "reject_bin": "bin1",
+    "reject_bin_reason": "ai_xvision",
+    "status": "Rejected"
+}

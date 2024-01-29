@@ -3,8 +3,7 @@ import os
 import socket
 import time
 
-gs_socket_1 = "/datagsai/socket/gs_socket_1"
-gs_socket_2 = "/datagsai/socket/gs_socket_2"
+sockets = os.listdir('/datagsai/socket')
 
 files = ['../' + x for x in os.listdir('..') if x.endswith('.json')]
 
@@ -16,17 +15,17 @@ from datetime import datetime, timezone
 from random import random
 
 i = 0
-client_1 = []
-client_2 = []
-if os.path.exists(gs_socket_1):
-    client_1 = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
-    client_1.connect(gs_socket_1)
-else:
-    print("Couldn't Connect!")
-
-if os.path.exists(gs_socket_2):
-    client_2 = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
-    client_2.connect(gs_socket_2)
+clients = []
+for socket_no in range(len(sockets)):
+    gs_socket = '/datagsai/socket/{}'.format(sockets[int(socket_no)])
+    if os.path.exists(gs_socket):
+        try:
+            client = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+            client.connect(gs_socket)
+            clients.append(client)
+        except ConnectionRefusedError:
+            #sockets.remove(sockets[socket_no])
+            print("Couldn't connect to socket " + gs_socket)
 else:
     print("Couldn't Connect!")
 
@@ -43,16 +42,13 @@ while i in range(100):
     json_data['acq_time'] = int(datetime.now(tz=timezone.utc).timestamp() * 1000)
     json_data['images']['image_list'][0]['file_image_url'] = random.choice(images)
     print(json_data['event_id'])
-    if i%2 == 0:
-        json_data['belt_part'] = 'L'
-        client_1.send(json.dumps(json_data).encode())
-    else:
-        json_data['belt_part'] = 'R'
-        client_2.send(json.dumps(json_data).encode())
+    json_data['belt_part'] = ["F" if i % 2 == 0 else "B"]
+    clients[i%2].send(json.dumps(json_data).encode())
 
     time.sleep(max(1, int(random() * 10)))
     i = i + 1
-client_1.close()
-client_2.close()
+
+for client in clients:
+    client.close()
 
 print("Done")

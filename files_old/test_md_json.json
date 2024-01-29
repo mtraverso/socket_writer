@@ -1,0 +1,1215 @@
+{
+	"acq_time" : "1695760939475",
+	"belt_part" : "F",
+	"camera_id" : "gsai_cam_xray_1",
+	"event_id" : "81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+	"event_timestamp" : "2023-09-26T20:42:19.475Z",
+	"event_type" : "inspectionDetails",
+	"images" : 
+	{
+		"image_list" : 
+		[
+			{
+				"acq_timestamp" : "2023-09-26T20:42:19.475Z",
+				"detector" : "gsai-xray-v1.2",
+				"file_format" : "png",
+				"file_image_url" : "/datagsai/images/test_image_1",
+				"image_file_size" : 266734,
+				"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+				"index" : 1,
+				"resolution" : 
+				{
+					"length" : 544,
+					"width" : 285
+				}
+			},
+			{
+				"acq_timestamp" : "",
+				"detector" : "metal-detector",
+				"file_image_url" : "",
+				"image_id" : "md_706549aa-1bd4-40b2-960f-4b9981e215d8",
+				"index" : 2
+			}
+		],
+		"number" : 2
+	},
+	"inspection_results" : 
+	{
+		"defect_count" : 26,
+		"primary_defect_ref" : "0835e3f7-9a9c-4e90-9073-d04198a5a86c",
+		"result_count" : 27,
+		"result_details" : 
+		[
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.15425065159797668,
+								0.34283089637756348
+							],
+							[
+								0.24627520143985748,
+								0.32996323704719543
+							],
+							[
+								0.28308501839637756,
+								0.40165442228317261
+							],
+							[
+								0.19106046855449677,
+								0.41452205181121826
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "0835e3f7-9a9c-4e90-9073-d04198a5a86c",
+				"size" : 
+				{
+					"area" : 291.91876220703125,
+					"length" : 28.463503340600244,
+					"width" : 19.152622491541045
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.36809816956520081,
+								0.68887865543365479
+							],
+							[
+								0.43558281660079956,
+								0.6796875
+							],
+							[
+								0.46275198459625244,
+								0.73391544818878174
+							],
+							[
+								0.3952673077583313,
+								0.74310660362243652
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "c6fedc8e-b59f-4ca9-b955-dc97a655ada2",
+				"size" : 
+				{
+					"area" : 253.45294189453125,
+					"length" : 21.508822642581563,
+					"width" : 13.973828436623158
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.29710778594017029,
+								0.61534929275512695
+							],
+							[
+								0.39088517427444458,
+								0.60891544818878174
+							],
+							[
+								0.41454863548278809,
+								0.69898897409439087
+							],
+							[
+								0.31989482045173645,
+								0.70588237047195435
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "70d7b9de-3f0f-43d4-9555-2962b37e341d",
+				"size" : 
+				{
+					"area" : 137.86947631835938,
+					"length" : 34.854386557995433,
+					"width" : 19.125436057507152
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.39614373445510864,
+								0.63924634456634521
+							],
+							[
+								0.53111308813095093,
+								0.61902570724487305
+							],
+							[
+								0.53900086879730225,
+								0.63419115543365479
+							],
+							[
+								0.40403154492378235,
+								0.65441179275512695
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "66f5c67a-4144-4f44-abe5-340a0046aa60",
+				"size" : 
+				{
+					"area" : 113.64622497558594,
+					"length" : 28.248915873782735,
+					"width" : 6.0714708247654876
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.23751094937324524,
+								0.58318012952804565
+							],
+							[
+								0.25591585040092468,
+								0.55055147409439087
+							],
+							[
+								0.34355828166007996,
+								0.56479781866073608
+							],
+							[
+								0.32515338063240051,
+								0.59742647409439087
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "24782a75-163e-496c-99c7-599af4d0829e",
+				"size" : 
+				{
+					"area" : 97.621376037597656,
+					"length" : 18.467960894947321,
+					"width" : 13.022935894173637
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.31814196705818176,
+								0.1852022111415863
+							],
+							[
+								0.36722174286842346,
+								0.1852022111415863
+							],
+							[
+								0.36722174286842346,
+								0.19485294818878174
+							],
+							[
+								0.31814196705818176,
+								0.19485294818878174
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "d281b8a0-f504-48de-ae96-a6a2d8eb2b43",
+				"size" : 
+				{
+					"area" : 24.657186508178711,
+					"length" : 9.8591549295774659,
+					"width" : 3.6971830985915495
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.28045573830604553,
+								0.20358455181121826
+							],
+							[
+								0.29798421263694763,
+								0.20174632966518402
+							],
+							[
+								0.30850130319595337,
+								0.23069852590560913
+							],
+							[
+								0.29184925556182861,
+								0.23253676295280457
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "9bc9d0d1-12cf-4634-9627-a2316dfe8f42",
+				"size" : 
+				{
+					"area" : 20.038806915283203,
+					"length" : 11.283310366348482,
+					"width" : 3.5157052563949374
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.27519720792770386,
+								0.52573531866073608
+							],
+							[
+								0.30061349272727966,
+								0.52435660362243652
+							],
+							[
+								0.30324277281761169,
+								0.53354781866073608
+							],
+							[
+								0.27695003151893616,
+								0.53492647409439087
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "42e45679-1755-4a89-8130-f1bb751648f2",
+				"size" : 
+				{
+					"area" : 16.102334976196289,
+					"length" : 5.2763697127221336,
+					"width" : 3.5484357618949782
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.46888694167137146,
+								0.86534929275512695
+							],
+							[
+								0.48203331232070923,
+								0.86443012952804565
+							],
+							[
+								0.49167397618293762,
+								0.89705884456634521
+							],
+							[
+								0.47852760553359985,
+								0.89797794818878174
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "5c6b57ce-7529-4e7d-a345-ac5147cbd6df",
+				"size" : 
+				{
+					"area" : 15.218955039978027,
+					"length" : 12.658230687530947,
+					"width" : 2.74582026709973
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.39088517427444458,
+								0.83915442228317261
+							],
+							[
+								0.40929010510444641,
+								0.83915442228317261
+							],
+							[
+								0.40929010510444641,
+								0.85248160362243652
+							],
+							[
+								0.39088517427444458,
+								0.85248160362243652
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "84f30312-799a-49e2-8ebc-fd25b553c20c",
+				"size" : 
+				{
+					"area" : 11.933396339416504,
+					"length" : 5.1056338028169019,
+					"width" : 3.6971830985915495
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.43295353651046753,
+								0.85386031866073608
+							],
+							[
+								0.44960561394691467,
+								0.85386031866073608
+							],
+							[
+								0.44960561394691467,
+								0.86259192228317261
+							],
+							[
+								0.43295353651046753,
+								0.86259192228317261
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "b17234ae-c5ad-4179-8a42-03b1c96252aa",
+				"size" : 
+				{
+					"area" : 10.879537582397461,
+					"length" : 3.3450704225352115,
+					"width" : 3.3450704225352115
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.22348816692829132,
+								0.42463234066963196
+							],
+							[
+								0.24276949465274811,
+								0.42463234066963196
+							],
+							[
+								0.24276949465274811,
+								0.43290442228317261
+							],
+							[
+								0.22348816692829132,
+								0.43290442228317261
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "e35d0b3a-b2da-4828-8181-c8bc38b4233c",
+				"size" : 
+				{
+					"area" : 10.569579124450684,
+					"length" : 3.8732394366197185,
+					"width" : 3.1690140845070425
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.25679227709770203,
+								0.49724265933036804
+							],
+							[
+								0.27519720792770386,
+								0.49724265933036804
+							],
+							[
+								0.27519720792770386,
+								0.50551468133926392
+							],
+							[
+								0.25679227709770203,
+								0.50551468133926392
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "cf5de16e-928b-4252-943e-fdc5824e5172",
+				"size" : 
+				{
+					"area" : 10.461093902587891,
+					"length" : 3.6971830985915495,
+					"width" : 3.1690140845070425
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.27957931160926819,
+								0.44806984066963196
+							],
+							[
+								0.29272568225860596,
+								0.44806984066963196
+							],
+							[
+								0.29272568225860596,
+								0.45680147409439087
+							],
+							[
+								0.27957931160926819,
+								0.45680147409439087
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "0876a16c-268a-41de-897c-5da4e0ef5316",
+				"size" : 
+				{
+					"area" : 6.6641044616699219,
+					"length" : 3.3450704225352115,
+					"width" : 2.6408450704225355
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.43207713961601257,
+								0.78400737047195435
+							],
+							[
+								0.44697633385658264,
+								0.78400737047195435
+							],
+							[
+								0.44697633385658264,
+								0.79044115543365479
+							],
+							[
+								0.43207713961601257,
+								0.79044115543365479
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "b2e98871-ec50-478b-a5ef-93daba8e459f",
+				"size" : 
+				{
+					"area" : 5.7807230949401855,
+					"length" : 2.9929577464788735,
+					"width" : 2.4647887323943665
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.50920248031616211,
+								0.33409926295280457
+							],
+							[
+								0.51884311437606812,
+								0.33409926295280457
+							],
+							[
+								0.51884311437606812,
+								0.34283089637756348
+							],
+							[
+								0.50920248031616211,
+								0.34283089637756348
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "f4c62661-0814-4f6c-a4d3-7faf82f5193a",
+				"size" : 
+				{
+					"area" : 5.7342290878295898,
+					"length" : 3.3450704225352115,
+					"width" : 1.9366197183098592
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.48028045892715454,
+								0.35248160362243652
+							],
+							[
+								0.49342682957649231,
+								0.35248160362243652
+							],
+							[
+								0.49342682957649231,
+								0.35799631476402283
+							],
+							[
+								0.48028045892715454,
+								0.35799631476402283
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "55b2f92b-efbe-4591-a44b-1e6bdefb8c8f",
+				"size" : 
+				{
+					"area" : 3.9984626770019531,
+					"length" : 2.6408450704225355,
+					"width" : 2.1126760563380285
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.31901839375495911,
+								0.53400737047195435
+							],
+							[
+								0.32602980732917786,
+								0.53400737047195435
+							],
+							[
+								0.32602980732917786,
+								0.53860294818878174
+							],
+							[
+								0.31901839375495911,
+								0.53860294818878174
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "25f90419-7788-4a60-9cfc-585e10d6695b",
+				"size" : 
+				{
+					"area" : 2.4796667098999023,
+					"length" : 1.7605633802816902,
+					"width" : 1.4084507042253522
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.76336544752120972,
+								0.52389705181121826
+							],
+							[
+								0.77037686109542847,
+								0.52389705181121826
+							],
+							[
+								0.77037686109542847,
+								0.52757352590560913
+							],
+							[
+								0.76336544752120972,
+								0.52757352590560913
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "a9a497e1-5b70-4556-9456-b4800ec2697b",
+				"size" : 
+				{
+					"area" : 1.9837334156036377,
+					"length" : 1.4084507042253522,
+					"width" : 1.4084507042253522
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.31025415658950806,
+								0.48253676295280457
+							],
+							[
+								0.31726557016372681,
+								0.48253676295280457
+							],
+							[
+								0.31726557016372681,
+								0.48621323704719543
+							],
+							[
+								0.31025415658950806,
+								0.48621323704719543
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "acb7caa8-78f8-4388-bb92-fe2d35a43758",
+				"size" : 
+				{
+					"area" : 1.9837334156036377,
+					"length" : 1.4084507042253522,
+					"width" : 1.4084507042253522
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.43558281660079956,
+								0.44577205181121826
+							],
+							[
+								0.44259423017501831,
+								0.44577205181121826
+							],
+							[
+								0.44259423017501831,
+								0.44944852590560913
+							],
+							[
+								0.43558281660079956,
+								0.44944852590560913
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "3c9de794-1546-4b98-ad31-3ea2e47d30df",
+				"size" : 
+				{
+					"area" : 1.9837334156036377,
+					"length" : 1.4084507042253522,
+					"width" : 1.4084507042253522
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.54776513576507568,
+								0.34650734066963196
+							],
+							[
+								0.55477648973464966,
+								0.34650734066963196
+							],
+							[
+								0.55477648973464966,
+								0.35018381476402283
+							],
+							[
+								0.54776513576507568,
+								0.35018381476402283
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "d2227a71-b848-4b06-a93c-7d5633bc08ef",
+				"size" : 
+				{
+					"area" : 1.9837334156036377,
+					"length" : 1.4084507042253522,
+					"width" : 1.4084507042253522
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.44347062706947327,
+								0.80928307771682739
+							],
+							[
+								0.45048204064369202,
+								0.80928307771682739
+							],
+							[
+								0.45048204064369202,
+								0.81295955181121826
+							],
+							[
+								0.44347062706947327,
+								0.81295955181121826
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "369ca739-38d3-449b-82eb-ca241c07ab51",
+				"size" : 
+				{
+					"area" : 1.9837334156036377,
+					"length" : 1.4084507042253522,
+					"width" : 1.4084507042253522
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.4618755578994751,
+								0.31617647409439087
+							],
+							[
+								0.46888694167137146,
+								0.31617647409439087
+							],
+							[
+								0.46888694167137146,
+								0.31985294818878174
+							],
+							[
+								0.4618755578994751,
+								0.31985294818878174
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "77b7418d-43c8-4b36-beb5-1a569c812e0b",
+				"size" : 
+				{
+					"area" : 1.9837334156036377,
+					"length" : 1.4084507042253522,
+					"width" : 1.4084507042253522
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.38299736380577087,
+								0.83226102590560913
+							],
+							[
+								0.39000877737998962,
+								0.83226102590560913
+							],
+							[
+								0.39000877737998962,
+								0.8359375
+							],
+							[
+								0.38299736380577087,
+								0.8359375
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "dc1187f3-9996-46d6-858b-351c7878790c",
+				"size" : 
+				{
+					"area" : 1.9837334156036377,
+					"length" : 1.4084507042253522,
+					"width" : 1.4084507042253522
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Not available",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "image_7_0_81762cba-4de1-42e3-a11c-e2e1b72a6fde",
+						"polygon" : 
+						[
+							[
+								0.70815074443817139,
+								0.84007352590560913
+							],
+							[
+								0.71516215801239014,
+								0.84007352590560913
+							],
+							[
+								0.71516215801239014,
+								0.84375
+							],
+							[
+								0.70815074443817139,
+								0.84375
+							]
+						]
+					}
+				],
+				"is_defect" : true,
+				"position" : "Package Region",
+				"result_id" : "0f5825ca-fe12-4785-9c4f-79ad2b1069e9",
+				"size" : 
+				{
+					"area" : 1.9837334156036377,
+					"length" : 1.4084507042253522,
+					"width" : 1.4084507042253522
+				},
+				"source" : 
+				{
+					"model" : "cv",
+					"type" : "detection",
+					"version" : ""
+				},
+				"type" : "Foreign material"
+			},
+			{
+				"classification" : "Metal",
+				"image_ref" : 
+				[
+					{
+						"image_id" : "md_706549aa-1bd4-40b2-960f-4b9981e215d8"
+					}
+				],
+				"is_defect" : true,
+				"result_id" : "84889a30-23d8-48bb-a530-ebb1eaa43bf1",
+				"source" : 
+				{
+					"model" : "result_handler_md",
+					"type" : "detection",
+					"version" : "3.0"
+				},
+				"type" : "Foreign material"
+			}
+		]
+	},
+	"inspection_type" : "Production",
+	"job_id" : "26285103-2a0e-4603-974c-70df90aa21f9",
+	"machine_id" : "Carrera012",
+	"measurement_groups" : null,
+	"reject_bin" : "bin1",
+	"reject_bin_reason" : "cv_other",
+	"status" : "Rejected"
+}
+

@@ -3,54 +3,68 @@ import os
 import socket
 import time
 
-gs_socket = "/datagsai/socket/gs_socket"
+from socket_writer.utils import list_files_by_extension, set_image
 
-files = ['../'+x for x in os.listdir('..') if x.endswith('.json')]
+sockets = os.listdir('/datagsai/socket')
+
+
+#dirs = os.listdir('../files')
+dirs = ["passed"]
+files = []
+for dir in dirs:
+    for f in list_files_by_extension('../files/'+dir+"/", ".json"):
+        files.append("../files/"+dir+"/"+f)
+print(files)
+
+
+#files = ["../json_data_new_schema_one_fm.json", "../json_data_new_schema_two_fm_same_type.json", "../json_data_new_schema_only_ai.json", "../json_data_new_schema.json", "../json_data_passed.json"]
 
 import uuid
 from datetime import datetime
-from uuid import UUID
-
-import uuid
-from datetime import datetime, timezone
-from random import random, randint
+import random
 i = 0
-client = []
+clients = []
+for socket_no in range(len(sockets)):
+    gs_socket = '/Users/matias/gsaidata/socket/{}'.format(sockets[int(socket_no)])
 
-image_list = ['/datagsai/images/image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325', '/datagsai/images/image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c26', '/datagsai/images/image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25', '/datagsai/images/image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c27', '/datagsai/images/SS_FM0000000000_32F_b2.out.png', '/datagsai/images/SS_FM0000000001_32F_b2.out.png', '/datagsai/images/SS_FM0000000023_32F_b2.out.png', '/datagsai/images/test_image_1.jpg', '/datagsai/images/test_image_2.jpg']
-begin = datetime.now()
-if os.path.exists(gs_socket):
-    client = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
-    client.connect(gs_socket)
-else:
-    print("Couldn't Connect!")
-while i in range(1400):
     if os.path.exists(gs_socket):
-        print("Writing ", (i + 1))
-        client = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
-        client.connect(gs_socket)
-        file = files[i % len(files)]
+        try:
+            client = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+            client.connect(gs_socket)
+            clients.append(client)
+        except ConnectionRefusedError:
+            #sockets.remove(sockets[socket_no])
+            print("Couldn't connect to socket " + gs_socket)
 
+images = list_files_by_extension('/datagsai/images', '.png')
+images.extend(list_files_by_extension('/datagsai/images', '.jpg'))
+
+belts = ['L', 'R']
+
+try:
+    begin = datetime.now()
+    while i in range(25000):
+        client = random.choice(clients)
+        print("Writing ", (i + 1))
+        file = random.choice(files)
+        print(file)
         f = open(file)
         json_data = json.load(f)
         json_data['event_timestamp'] = str(datetime.now())
-        json_data['acq_time'] = int(datetime.now(tz=timezone.utc).timestamp() * 1000)
+
+        json_data['acq_time'] = int(datetime.now().timestamp()*1000)
         json_data['event_id'] = str(uuid.uuid4())
-        print(json_data['event_id'] + " "+file)
-        json_data['images']['image_list'][0]['file_image_url'] = image_list[randint(0, len(image_list)-1)]
+        json_data['belt_part'] = random.choice(belts)
+        set_image(json_data, images)
 
         client.send(json.dumps(json_data).encode())
-        time.sleep(0.25)
-        client.close()
+        #time.sleep(0.019)
+        #time.sleep(0.03)
         i = i + 1
 
-    else:
-        print("Couldn't Connect!")
-finish = datetime.now()
-
-difference = finish-begin
-total_seconds = difference.total_seconds()
-
-print("Running for "+ str(total_seconds)+" secs")
-
+    end = datetime.now()
+    print("Ran for "+str((end-begin).total_seconds())+ " seconds")
+finally:
+    for client in clients:
+        client.close()
 print("Done")

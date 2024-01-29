@@ -1,0 +1,103 @@
+{
+   "acq_time" : "1666666666000",
+   "belt_part" : "F",
+   "camera_id" : "gsai_cam_xray_1",
+   "event_id" : "08afded0-b854-4509-a944-c81f9787b7af",
+   "event_timestamp" : "2022-10-24T23:16:00.390Z",
+   "event_type" : "inspectionDetails",
+   "images" : {
+      "image_list" : [
+         {
+            "acq_timestamp" : "2022-10-24T23:16:00.22Z",
+            "detector" : "gsai-xray-v1.2",
+            "file_format" : "png",
+            "file_image_url" : "/home/gsai/gs-edge-deploy-035090f9/gs-edge-fx/build/../../FM-out/SS_FM0000000001_32F_b2.out.png",
+            "image_file_size" : 35050,
+            "image_id" : "image_1_0_08afded0-b854-4509-a944-c81f9787b7af",
+            "index" : 1,
+            "resolution" : {
+               "height" : 295,
+               "width" : 191
+            }
+         },
+         {
+            "acq_timestamp" : "1666666665000",
+            "detector" : "metal-detector",
+            "file_image_url" : "",
+            "image_id" : "md_abcdef01-2345-6789-ffff-ffffffffffff",
+            "index" : 2
+         }
+      ],
+      "number" : 2
+   },
+   "inspection_results" : {
+      "defect_count" : 1,
+      "primary_defect_ref" : "5472b9f3-4482-4c0b-8cab-7e22a59a9f00",
+      "result_count" : 3,
+      "result_details" : [
+         {
+            "classification" : "product-in-seal",
+            "confidence_score" : 1,
+            "image_ref" : [
+               {
+                  "image_id" : "image_1_0_08afded0-b854-4509-a944-c81f9787b7af"
+               }
+            ],
+            "is_defect" : true,
+            "result_grade" : "A",
+            "result_grade_description" : "Product in a seal",
+            "result_grade_score" : 0.48072588443756104,
+            "result_grade_threshold" : 0.5,
+            "result_id" : "5472b9f3-4482-4c0b-8cab-7e22a59a9f00",
+            "source" : {
+               "model" : "sargento_product-in-seal_310e4314e",
+               "type" : "classification",
+               "version" : "310e4314e"
+            },
+            "type" : "Material handling"
+         },
+         {
+            "classification" : "torn-cheese",
+            "confidence_score" : 1,
+            "image_ref" : [
+               {
+                  "image_id" : "image_1_0_08afded0-b854-4509-a944-c81f9787b7af"
+               }
+            ],
+            "is_defect" : false,
+            "result_grade" : "A",
+            "result_grade_description" : "Torn cheese",
+            "result_grade_score" : 0.17723989486694336,
+            "result_grade_threshold" : 0.6,
+            "result_id" : "ae7f1f16-1133-4fb0-9004-49dd11f656a2",
+            "source" : {
+               "model" : "sargento_torn-cheese_310e4314e",
+               "type" : "classification",
+               "version" : "310e4314e"
+            },
+            "type" : "Material handling"
+         },
+         {
+            "classification" : "Metal",
+            "image_ref" : [
+               {
+                  "image_id" : "md_abcdef01-2345-6789-ffff-ffffffffffff"
+               }
+            ],
+            "is_defect" : true,
+            "result_id" : "abcdef01-2345-6789-ffff-ffffffffffff",
+            "source" : {
+               "model" : "result_handler_md",
+               "type" : "detection",
+               "version" : "3.0"
+            },
+            "type" : "Foreign material"
+         }
+      ]
+   },
+   "inspection_type" : "Production",
+   "job_id" : "2da0a843-84ac-4356-abaa-de81e3186c87",
+   "machine_id" : "Earth006-2",
+   "reject_bin" : "bin1",
+   "status" : "Rejected"
+}

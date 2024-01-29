@@ -1,0 +1,79 @@
+{
+    "acq_time": "1698783416424",
+    "belt_part": "B",
+    "camera_id": "gsai_cam_xray_1",
+    "event_id": "5ed3565b-9e7f-408c-818d-634a230c9bab",
+    "event_timestamp": "2023-10-31T20:16:56.424Z",
+    "event_type": "inspectionDetails",
+    "images": {
+        "image_list": [
+            {
+                "acq_timestamp": "2023-10-31T20:16:56.424Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/datagsai/images/test_image_1.jpg",
+                "image_file_size": 24703,
+                "image_id": "image_43_0_R_5ed3565b-9e7f-408c-818d-634a230c9bab",
+                "index": 1,
+                "resolution": {
+                    "length": 112,
+                    "width": 137
+                }
+            }
+        ],
+        "number": 1
+    },
+    "inspection_results": {
+        "defect_count": 1,
+        "primary_defect_ref": "4cd1a27f-3b59-4b3f-affd-25d5800c1aea",
+        "result_count": 1,
+        "result_details": [
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_43_0_5ed3565b-9e7f-408c-818d-634a230c9bab",
+                        "polygon": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0.99817848205566406,
+                                0
+                            ],
+                            [
+                                0.99817848205566406,
+                                0.99777776002883911
+                            ],
+                            [
+                                0,
+                                0.99777776002883911
+                            ]
+                        ]
+                    }
+                ],
+                "is_ai": false,
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "4cd1a27f-3b59-4b3f-affd-25d5800c1aea",
+                "size": {
+                    "area": 6376.5712890625,
+                    "length": 96.478873239436624,
+                    "width": 79.09295774647888
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            }
+        ]
+    },
+    "inspection_type": "Production",
+    "job_id": "8824bc4b-5f86-413b-be16-90c524af4315",
+    "machine_id": "Earth002-3",
+    "measurement_groups": null,
+    "status": "Rejected"
+}

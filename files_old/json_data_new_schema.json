@@ -3,6 +3,7 @@
   "event_timestamp": "2021-06-19T21:30:30.000Z",
   "event_type": "inspectionDetails",
   "machine_id": "machine12345679",
+  "belt_part": "F",
   "job_id": "dbb7d6fd-d76b-40e5-a515-62271a3c8f40",
   "images": {
     "number": 1,
@@ -45,7 +46,7 @@
     "primary_defect_ref": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
     "result_details": [
       {
-        "defect_id": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
+        "result_id": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
         "type": "Foreign material",
         "classification": "Metal",
         "is_ai": false,
@@ -86,7 +87,7 @@
         "position": "Package Region"
       },
       {
-        "defect_id": "0ecc452f-2206-413b-a1ed-531bc555fe35",
+        "result_id": "0ecc452f-2206-413b-a1ed-531bc555fe35",
         "type": "Foreign material",
         "classification": "Bone",
         "is_ai": false,
@@ -189,7 +190,7 @@
         "position": "Package Region"
       },
       {
-        "defect_id": "3c85689c-185a-459e-9b8e-ce0dc66a4b3d",
+        "result_id": "3c85689c-185a-459e-9b8e-ce0dc66a4b3d",
         "type": "Material handling",
         "classification": "Bone",
         "is_ai": true,
@@ -211,7 +212,7 @@
         "confidence_score": 0.7
       },
       {
-        "defect_id": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
+        "result_id": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
         "type": "Foreign material",
         "classification": "Bone",
         "is_defect": true,
@@ -253,7 +254,7 @@
         "confidence_score": 0.8
       },
       {
-        "defect_id": "0ecc452f-2206-413b-a1ed-531bc225fe35",
+        "result_id": "0ecc452f-2206-413b-a1ed-531bc225fe35",
         "type": "Checkweighing",
         "classification": "Overweight",
         "is_ai": false,

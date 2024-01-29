@@ -36,6 +36,7 @@ if os.path.exists(gs_socket):
     json_data['acq_time'] = int(datetime.now(tz=timezone.utc).timestamp() * 1000)
     image = [x for x in json_data['images']['image_list'] if x['detector'] == 'gsai-xray-v1.2'][0]
     image['file_image_url'] = random.choice(images)
+
     image['acq_timestamp'] = datetime.now(tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S.%f')
     print(json_data)
     json_data['belt_part'] = sys.argv[3]

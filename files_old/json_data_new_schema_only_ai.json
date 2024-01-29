@@ -1,8 +1,9 @@
 {
-    "event_id": "0ac8279e-a7f3-4b0f-8e84-0010cff1d437",
+    "event_id": "0ac8279e-a7f3-4b0f-8e84-0010cff1d438",
     "event_timestamp": "2021-06-19T21:30:30.000Z",
     "event_type": "inspectionDetails",
     "machine_id": "machine12345679",
+    "belt_part": "F",
     "job_id": "dbb7d6fd-d76b-40e5-a515-62271a3c8f40",
     "images": {
         "number": 1,
@@ -11,7 +12,7 @@
                 "index": 1,
                 "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
                 "acq_timestamp": "2021-06-19T21:30:30.000Z",
-                "file_image_url": "/Users/matias/gsaidata/images/test_image_1.jpg",
+                "file_image_url": "/datagsai/images/SS_FM0000000000_32F_b2.out.png",
                 "resolution": {
                     "width": 1280,
                     "length": 720
@@ -24,7 +25,7 @@
                 "index": 2,
                 "image_id": "image_0_0_c216ae3a-d587-4bd7-9366-98324aaba325",
                 "acq_timestamp": "2021-06-19T21:30:30.000Z",
-                "file_image_url": "/Users/matias/gsaidata/images/test_image_2.jpg",
+                "file_image_url": "/datagsai/images/SS_FM0000000001_32F_b2.out.png",
                 "resolution": {
                     "width": 1280,
                     "length": 720
@@ -48,9 +49,9 @@
             {
                 "result_id": "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
                 "is_defect": true,
-                "type": "Foreign material",
-                "classification": "Glass",
-		        "is_ai":false,
+                "type": "Material handling",
+                "classification": "Bone",
+		        "is_ai":true,
                 "image_ref": [
                     {
                         "image_id": "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
@@ -63,7 +64,7 @@
                     }
                 ],
                 "source": {
-                    "model": "cv",
+                    "model": "wc_v12",
                     "version": "20220916.4-main-157da009",
                     "type": "detection"
                 },
@@ -134,7 +135,7 @@
                 },
                 {
                     "name": "weight",
-                    "value_number": 59.3,
+                    "value_number": 10.3,
                     "unit": "g" 
                 }
             ]

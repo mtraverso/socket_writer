@@ -1,0 +1,472 @@
+{
+   "acq_time" : "1663360870377",
+   "belt_part" : "F",
+   "camera_id" : "gsai_cam_xray_1",
+   "event_id" : "c29414a7-007b-4c00-94fd-18461e791aa2",
+   "event_timestamp" : "2022-12-12T16:13:01.452Z",
+   "event_type" : "inspectionDetails",
+   "images" : {
+      "image_list" : [
+         {
+            "acq_timestamp" : "2021-06-19T21:30:30.000Z",
+            "detector" : "gsai-xray-v1.2",
+            "file_format" : "png",
+            "file_image_url" : "/home/gsai/gs-edge-deploy-20220726.20-main-466876c9/gs-edge-fx/build/../../FM-out/SS_FM0000000007_32F_b2.out.png",
+            "image_file_size" : 428356,
+            "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
+            "index" : 1,
+            "resolution" : {
+               "length" : 720,
+               "width" : 1280
+            }
+         },
+         {
+            "acq_timestamp" : "2023-08-08T20:40:10.377Z",
+            "detector" : "metal-detector",
+            "file_image_url" : "",
+            "image_id" : "md_abcdef00-007b-4c00-94fd-18461e791aa2",
+            "index" : 2
+         }
+      ],
+      "number" : 2
+   },
+   "inspection_results" : {
+      "defect_count" : 7,
+      "primary_defect_ref" : "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
+      "result_count" : 9,
+      "result_details" : [
+         {
+            "classification" : "Bone",
+            "image_ref" : [
+               {
+                  "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
+                  "polygon" : [
+                     [
+                        0.4294032156467,
+                        0.7952688336372
+                     ],
+                     [
+                        0.4992721974849,
+                        0.4769892394542
+                     ],
+                     [
+                        0.4997574090957,
+                        0.4769892394542
+                     ],
+                     [
+                        0.5002425909042,
+                        0.4774193465709
+                     ],
+                     [
+                        0.5007277727127,
+                        0.4774193465709
+                     ],
+                     [
+                        0.5012130141258,
+                        0.4778494536876
+                     ],
+                     [
+                        0.5016981959342,
+                        0.4778494536876
+                     ],
+                     [
+                        0.5021833777427,
+                        0.4782795608043
+                     ],
+                     [
+                        0.507035434246,
+                        0.4782795608043
+                     ],
+                     [
+                        0.508005797863,
+                        0.4774193465709
+                     ],
+                     [
+                        0.5084910392761,
+                        0.4774193465709
+                     ],
+                     [
+                        0.509461402893,
+                        0.4765591323375
+                     ],
+                     [
+                        0.5099466443061,
+                        0.4765591323375
+                     ],
+                     [
+                        0.5114022493362,
+                        0.4752688109874
+                     ],
+                     [
+                        0.5114022493362,
+                        0.474408596754
+                     ],
+                     [
+                        0.5118874311447,
+                        0.4739784896373
+                     ],
+                     [
+                        0.5118874311447,
+                        0.4731182754039
+                     ],
+                     [
+                        0.5123726129531,
+                        0.4726881682872
+                     ],
+                     [
+                        0.5123726129531,
+                        0.4653763473033
+                     ],
+                     [
+                        0.5109170079231,
+                        0.4640860259532
+                     ],
+                     [
+                        0.5104318261146,
+                        0.4640860259532
+                     ],
+                     [
+                        0.5099466443061,
+                        0.4636559188365
+                     ],
+                     [
+                        0.5099466443061,
+                        0.4627957046031
+                     ],
+                     [
+                        0.507035434246,
+                        0.4627957046031
+                     ],
+                     [
+                        0.5065501928329,
+                        0.4623655974864
+                     ],
+                     [
+                        0.5065501928329,
+                        0.4619354903697
+                     ]
+                  ]
+               }
+            ],
+            "is_defect" : true,
+            "position" : "Package Region",
+            "result_id" : "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
+            "size" : {
+               "area" : 2.458,
+               "length" : 4,
+               "width" : 5
+            },
+            "source" : {
+               "model" : "cv",
+               "type" : "detection",
+               "version" : "20220916.4-main-157da009"
+            },
+            "type" : "Foreign material"
+         },
+         {
+            "classification" : "Bone",
+            "image_ref" : [
+               {
+                  "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
+                  "polygon" : [
+                     [
+                        0.53,
+                        0.87
+                     ],
+                     [
+                        0.78,
+                        0.46
+                     ],
+                     [
+                        0.31,
+                        0.43
+                     ],
+                     [
+                        0.5,
+                        0.12
+                     ]
+                  ]
+               }
+            ],
+            "is_defect" : true,
+            "position" : "Package Region",
+            "result_id" : "0ecc452f-2206-413b-a1ed-531bc555fe35",
+            "size" : {
+               "area" : 1.123,
+               "length" : 3,
+               "width" : 4
+            },
+            "source" : {
+               "model" : "cv",
+               "type" : "detection",
+               "version" : "20220916.4-main-157da009"
+            },
+            "type" : "Foreign material"
+         },
+         {
+            "classification" : "Not available",
+            "image_ref" : [
+               {
+                  "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
+                  "polygon" : [
+                     [
+                        0.53,
+                        0.87
+                     ],
+                     [
+                        0.78,
+                        0.46
+                     ],
+                     [
+                        0.31,
+                        0.43
+                     ],
+                     [
+                        0.5,
+                        0.12
+                     ]
+                  ]
+               }
+            ],
+            "is_defect" : true,
+            "position" : "Package Region",
+            "result_id" : "d467081b-05c4-4b74-907b-701e3a8e6501",
+            "size" : {
+               "area" : 0.321,
+               "length" : 4,
+               "width" : 5
+            },
+            "source" : {
+               "model" : "cv",
+               "type" : "detection",
+               "version" : "20220916.4-main-157da009"
+            },
+            "type" : "Foreign material"
+         },
+         {
+            "classification" : "Bone",
+            "confidence_score" : 0.8,
+            "image_ref" : [
+               {
+                  "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25",
+                  "polygon" : [
+                     [
+                        0.53,
+                        0.87
+                     ],
+                     [
+                        0.78,
+                        0.46
+                     ],
+                     [
+                        0.31,
+                        0.43
+                     ],
+                     [
+                        0.5,
+                        0.12
+                     ]
+                  ]
+               }
+            ],
+            "is_defect" : true,
+            "position" : "Package Region",
+            "result_id" : "30b82f01-fb25-45ee-bc9c-f85f03ccc77b",
+            "size" : {
+               "area" : 2.458,
+               "length" : 4,
+               "width" : 5
+            },
+            "source" : {
+               "model" : "cv",
+               "type" : "detection",
+               "version" : "20220916.4-main-157da009"
+            },
+            "type" : "Foreign material"
+         },
+         {
+            "classification" : "Overweight",
+            "image_ref" : [
+               {
+                  "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25"
+               }
+            ],
+            "is_defect" : true,
+            "result_id" : "0ecc452f-2206-413b-a1ed-531bc225fe35",
+            "source" : {
+               "model" : "cv",
+               "type" : "detection",
+               "version" : "20220916.4-main-157da009"
+            },
+            "type" : "Checkweighing"
+         },
+         {
+            "classification" : "extra-bun",
+            "confidence_score" : 1,
+            "image_ref" : [
+               {
+                  "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25"
+               }
+            ],
+            "is_defect" : false,
+            "result_grade" : "A",
+            "result_grade_description" : "WC extra bun inspector.",
+            "result_grade_score" : 8.87832641183195e-07,
+            "result_grade_threshold" : 0.99999,
+            "result_id" : "52247806-82fa-44b1-b5ea-8e050263e691",
+            "source" : {
+               "model" : "wc_extra-bun_0d894e08e",
+               "type" : "classification",
+               "version" : "0d894e08e"
+            },
+            "type" : "Material handling"
+         },
+         {
+            "classification" : "bun-missing",
+            "confidence_score" : 1,
+            "image_ref" : [
+               {
+                  "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25"
+               }
+            ],
+            "is_defect" : false,
+            "result_grade" : "A",
+            "result_grade_description" : "WC bun missing inspector.",
+            "result_grade_score" : 0.873207211494446,
+            "result_grade_threshold" : 0.99999,
+            "result_id" : "08aa7968-5818-4f35-a547-80767922f62f",
+            "source" : {
+               "model" : "wc_bun-missing_0d894e08e",
+               "type" : "classification",
+               "version" : "0d894e08e"
+            },
+            "type" : "Material handling"
+         },
+         {
+            "classification" : "product-in-seal",
+            "confidence_score" : 1,
+            "image_ref" : [
+               {
+                  "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25"
+               }
+            ],
+            "is_defect" : true,
+            "result_grade" : "F",
+            "result_grade_description" : "WC product in seal inspector.",
+            "result_grade_score" : 0.944296061992645,
+            "result_grade_threshold" : 0.92,
+            "result_id" : "406d61b6-ce7d-43b1-ae5c-99ff7b798734",
+            "source" : {
+               "model" : "wc_product-in-seal_0d894e08e",
+               "type" : "classification",
+               "version" : "0d894e08e"
+            },
+            "type" : "Material handling"
+         },
+         {
+            "classification" : "defect",
+            "confidence_score" : 1,
+            "image_ref" : [
+               {
+                  "image_id" : "image_7_0_8f47def8-c8da-4fd9-8814-7ab79d696c25"
+               }
+            ],
+            "is_defect" : true,
+            "result_grade" : "F",
+            "result_grade_description" : "WC inspector.",
+            "result_grade_score" : 0.997917711734772,
+            "result_grade_threshold" : 0.9,
+            "result_id" : "93d69967-ed70-40ed-91d5-1ce54f301b2d",
+            "source" : {
+               "model" : "wc_v12",
+               "type" : "classification",
+               "version" : "1"
+            },
+            "type" : "Material handling"
+         },
+         {
+            "classification" : "Metal",
+            "image_ref" : [
+               {
+                  "image_id" : "md_abcdef00-007b-4c00-94fd-18461e791aa2"
+               }
+            ],
+            "is_defect" : true,
+            "result_id" : "0ecc452f-2206-413b-a1ed-531bc225fe35",
+            "source" : {
+               "model" : "result_handler_md",
+               "type" : "detection",
+               "version" : "3.0"
+            },
+            "type" : "Metal detector"
+         }
+      ]
+   },
+   "inspection_type" : "Production",
+   "job_id" : "dbb7d6fd-d76b-40e5-a515-62271a3c8f40",
+   "machine_id" : "machine12345679",
+   "measurement_groups" : [
+      {
+         "measurements" : [
+            {
+               "name" : "component",
+               "unit" : "none",
+               "value_string" : "Cheese"
+            },
+            {
+               "name" : "area",
+               "unit" : "sq mm",
+               "value_number" : 12
+            },
+            {
+               "name" : "weight",
+               "unit" : "g",
+               "value_number" : 133.3
+            }
+         ],
+         "type" : "Checkweighing"
+      },
+      {
+         "measurements" : [
+            {
+               "name" : "component",
+               "unit" : "none",
+               "value_string" : "Nuts"
+            },
+            {
+               "name" : "area",
+               "unit" : "sq mm",
+               "value_number" : 4
+            },
+            {
+               "name" : "weight",
+               "unit" : "g",
+               "value_number" : 25.6
+            }
+         ],
+         "type" : "Checkweighing"
+      },
+      {
+         "measurements" : [
+            {
+               "name" : "component",
+               "unit" : "none",
+               "value_string" : "total"
+            },
+            {
+               "name" : "area",
+               "unit" : "sq mm",
+               "value_number" : 544.4
+            },
+            {
+               "name" : "weight",
+               "unit" : "g",
+               "value_number" : 233.4
+            }
+         ],
+         "type" : "Checkweighing"
+      }
+   ],
+   "status" : "Rejected",
+   "reject_bin" : "bin2"
+}

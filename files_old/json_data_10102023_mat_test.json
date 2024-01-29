@@ -1,0 +1,222 @@
+{
+    "acq_time": "1696979624904",
+    "belt_part": "F",
+    "camera_id": "gsai_cam_xray_1",
+    "event_id": "4a7649e9-dc03-492f-a706-ad47680786df",
+    "event_timestamp": "2023-10-10T23:13:44.904Z",
+    "event_type": "inspectionDetails",
+    "images": {
+        "image_list": [
+            {
+                "acq_timestamp": "2023-10-10T23:13:44.904Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/home/gsai/gs-edge-deploy-aaeedf0b_Carrera012-dual_rejector/gs-edge-fx/build/../../../FM-out/SS_FM0000000017_32F_b2.out.png",
+                "image_file_size": 685975,
+                "image_id": "image_17_0_4a7649e9-dc03-492f-a706-ad47680786df",
+                "index": 1,
+                "resolution": {
+                    "length": 682,
+                    "width": 593
+                }
+            },
+            {
+                "acq_timestamp": "2023-10-10T23:13:42.309Z",
+                "detector": "metal-detector",
+                "file_image_url": "",
+                "image_id": "md_59132848-3458-434f-aadc-6fd0d0661fbb",
+                "index": 2
+            }
+        ],
+        "number": 2
+    },
+    "inspection_results": {
+        "defect_count": 5,
+        "primary_defect_ref": "e3b9ea26-d300-45e8-b036-5e03317f1b77",
+        "result_count": 5,
+        "result_details": [
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_17_0_4a7649e9-dc03-492f-a706-ad47680786df",
+                        "polygon": [
+                            [
+                                0.5963728427886963,
+                                0.2438577264547348
+                            ],
+                            [
+                                0.6237874031066895,
+                                0.22808948159217834
+                            ],
+                            [
+                                0.6280050873756409,
+                                0.2339567244052887
+                            ],
+                            [
+                                0.6005904674530029,
+                                0.24972496926784515
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "ac7547db-02c1-43d0-a4b7-2caae903a057",
+                "size": {
+                    "area": 24.734676361083984,
+                    "length": 13.670413594850352,
+                    "width": 3.3716060745884
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_17_0_4a7649e9-dc03-492f-a706-ad47680786df",
+                        "polygon": [
+                            [
+                                0.6427667737007141,
+                                0.21745507419109344
+                            ],
+                            [
+                                0.6634331345558167,
+                                0.20572057366371155
+                            ],
+                            [
+                                0.666807234287262,
+                                0.2104877084493637
+                            ],
+                            [
+                                0.6461408734321594,
+                                0.2222222238779068
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "633778a6-f9db-4b2b-bae0-3ac215547782",
+                "size": {
+                    "area": 19.170923233032227,
+                    "length": 10.19738492831378,
+                    "width": 2.7291754601706923
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_17_0_4a7649e9-dc03-492f-a706-ad47680786df",
+                        "polygon": [
+                            [
+                                0.582876443862915,
+                                0.25009167194366455
+                            ],
+                            [
+                                0.592998743057251,
+                                0.25009167194366455
+                            ],
+                            [
+                                0.592998743057251,
+                                0.2563256323337555
+                            ],
+                            [
+                                0.582876443862915,
+                                0.2563256323337555
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "60d2b0b7-3719-4b8b-8c60-76770ca044a1",
+                "size": {
+                    "area": 10.04265022277832,
+                    "length": 4.225352112676057,
+                    "width": 2.9929577464788735
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Not available",
+                "image_ref": [
+                    {
+                        "image_id": "image_17_0_4a7649e9-dc03-492f-a706-ad47680786df",
+                        "polygon": [
+                            [
+                                0.668072521686554,
+                                0.20242023468017578
+                            ],
+                            [
+                                0.6727119088172913,
+                                0.20242023468017578
+                            ],
+                            [
+                                0.6727119088172913,
+                                0.20608727633953094
+                            ],
+                            [
+                                0.668072521686554,
+                                0.20608727633953094
+                            ]
+                        ]
+                    }
+                ],
+                "is_defect": true,
+                "position": "Package Region",
+                "result_id": "754f6c99-36e6-4d27-a59e-e15c62e3b9c9",
+                "size": {
+                    "area": 3.2855584621429443,
+                    "length": 1.9366197183098592,
+                    "width": 1.7605633802816902
+                },
+                "source": {
+                    "model": "cv",
+                    "type": "detection",
+                    "version": ""
+                },
+                "type": "Foreign material"
+            },
+            {
+                "classification": "Metal",
+                "image_ref": [
+                    {
+                        "image_id": "md_59132848-3458-434f-aadc-6fd0d0661fbb"
+                    }
+                ],
+                "is_defect": true,
+                "result_id": "e3b9ea26-d300-45e8-b036-5e03317f1b77",
+                "source": {
+                    "model": "result_handler_md",
+                    "type": "detection",
+                    "version": "3.0"
+                },
+                "type": "Foreign material"
+            }
+        ]
+    },
+    "inspection_type": "Production",
+    "job_id": "c39863dc-23b6-46ce-9454-2a8c79bcf688",
+    "machine_id": "Carrera012",
+    "measurement_groups": null,
+    "reject_bin": "bin1",
+    "status": "Rejected"
+}

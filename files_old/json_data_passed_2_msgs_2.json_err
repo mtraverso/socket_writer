@@ -1,0 +1,25 @@
+"machine_id": "Earth002",
+    "measurement_groups": [
+        {
+            "measurements": [
+                {
+                    "name": "component",
+                    "unit": "none",
+                    "value_string": "Cheese"
+                },
+                {
+                    "name": "weight",
+                    "unit": "gr",
+                    "value_number": 220.7537841796875
+                },
+                {
+                    "name": "area",
+                    "unit": "sq cm",
+                    "value_number": 2.5594136714935303
+                }
+            ],
+            "type": "Checkweighing"
+        }
+    ],
+    "status": "Passed"
+}

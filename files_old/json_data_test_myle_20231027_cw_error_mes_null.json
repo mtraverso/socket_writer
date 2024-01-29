@@ -1,0 +1,36 @@
+{
+    "acq_time": "1698436689015",
+    "belt_part": "F",
+    "camera_id": "gsai_cam_xray_1",
+    "event_id": "2637fa67-7d5a-4b44-9f02-409f80e02f98",
+    "event_timestamp": "2023-10-27T19:58:09.015Z",
+    "event_type": "inspectionDetails",
+    "images": {
+        "image_list": [
+            {
+                "acq_timestamp": "2023-10-27T19:58:09.015Z",
+                "detector": "gsai-xray-v1.2",
+                "file_format": "png",
+                "file_image_url": "/home/gsai/gs-edge-deploy-ae67d36c/gs-edge-fx/build/../../../FM-out/SS_FM0000001898_32F_b2.out.png",
+                "image_file_size": 42753,
+                "image_id": "image_1898_0_2637fa67-7d5a-4b44-9f02-409f80e02f98",
+                "index": 1,
+                "resolution": {
+                    "length": 317,
+                    "width": 187
+                }
+            }
+        ],
+        "number": 1
+    },
+    "inspection_results": {
+        "defect_count": 0,
+        "result_count": 0,
+        "result_details": null
+    },
+    "inspection_type": "Production",
+    "job_id": "4aa96d32-e4bb-417b-83e5-c5873b5adeaa",
+    "machine_id": "Earth003-4",
+    "measurement_groups": null,
+    "status": "Passed"
+}
