@@ -36,6 +36,9 @@ for dir in dirs:
 print(files)
 
 belts = ['F', 'B']
+bins = ['bin1', 'bin2']
+
+reasons = ['torn-cheese', 'product-in-seal', 'bun-missing', 'meat-missing', 'extra-bun', 'single-burger', 'defect', 'Not available', 'metal_detector', 'cv_metal', 'cv_large_fm', 'cv_test_card']
 
 client = random.choice(clients)
 print("Ready.")
@@ -52,6 +55,8 @@ print(json_data)
 set_image(json_data, images)
 json_data['acq_time'] = int(datetime.now().timestamp()*1000)
 json_data['belt_part'] = random.choice(belts)
+json_data['reject_bin'] = random.choice(bins)
+json_data['reject_bin_reason'] = random.choice(reasons)
 client.send(json.dumps(json_data).encode())
 client.close()
 
